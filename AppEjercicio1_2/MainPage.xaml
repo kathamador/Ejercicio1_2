@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEjercicio1_2.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#F0B55B" Padding="20" CornerRadius="0">
+            <Label Text="Datos Personales" HorizontalTextAlignment="Center" TextColor="White" FontSize="30" FontAttributes="Bold"/>
+        </Frame>
+        <Frame Padding="10,0,10,0" Margin="10" CornerRadius="10">
+        <Entry x:Name="nombres" Placeholder="Ingrese sus nombres" MaxLength="100"/>
+        </Frame>
+        <Frame Padding="10,0,10,0" Margin="10" CornerRadius="10">
+        <Entry x:Name="apellidos" Placeholder="Ingrese sus apellidos" MaxLength="100"/>
+        </Frame>
+        <Frame Padding="10,0,10,0" Margin="10" CornerRadius="10">
+        <Entry x:Name="edad" Placeholder="Ingrese su edad" MaxLength="100" Keyboard="Numeric"/>
+        </Frame>
+        <Frame Padding="10,0,10,0" Margin="10" CornerRadius="10">
+        <Entry x:Name="correo" Placeholder="Ingrese su correo" MaxLength="100" Keyboard="Email"/>
+        </Frame>
+        <Button x:Name="btnguardar" Text="Guardar" Clicked="btnguardar_Clicked" BackgroundColor="#86E06D" WidthRequest="365" HeightRequest="55" HorizontalOptions="Center" CornerRadius="30" TextColor="White" Margin="0,20,0,0" FontAttributes="Bold" FontSize="18"/>
+
+    </StackLayout>
+
+</ContentPage>
